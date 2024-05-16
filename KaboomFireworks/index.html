@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fireworks Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="card" onclick="showVideo('video/24ShotComet.mp4')">
+            <img src="images/24ShotComet.jpg" alt="24 Shot Comet">
+        </div>
+        <div class="card" onclick="showVideo('video/AntAssault.mp4')">
+            <img src="images/AntAssault.jpg" alt="Ant Assault">
+        </div>
+        <div class="card" onclick="showVideo('video/KickAss.mp4')">
+            <img src="images/KickAss.jpg" alt="Kick Ass">
+        </div>
+        <div class="card" onclick="showVideo('video/BurstingSatellites.mp4')">
+            <img src="images/BurstingSatellites.jpg" alt="Twilight Zone">
+        </div>
+        <!-- Add more items as needed -->
+    </div>
+
+    <div id="videoModal" class="modal">
+        <span class="close" onclick="closeVideo()">&times;</span>
+        <video id="videoPlayer" controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
